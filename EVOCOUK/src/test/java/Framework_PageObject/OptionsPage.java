@@ -60,14 +60,14 @@ public class OptionsPage {
 		}
 		
 					
-		public  ContactDetailsPage selectoptions(){
+		public  ContactDetailsPage selectoptions(String TC){
 	    
 			JavascriptExecutor js = (JavascriptExecutor) driver; //Javascript executor to invoke scroll down of page
 			opt1().click();
 			opt2().click();
 			opt3().click();
 			opt4().click();
-			Screenshot.capturescreenshot(driver, "OptionsPage_1"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"OptionsPage_1"); //Calling TakeScreenshot utility
 			contbut().click();
 			return PageFactory.initElements(driver,ContactDetailsPage.class);
 					}

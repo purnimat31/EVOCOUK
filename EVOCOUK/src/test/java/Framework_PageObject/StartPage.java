@@ -39,11 +39,11 @@ public class StartPage {
 				
 			}
 		 
-		 public  DetailsPage starttest() throws IOException, InterruptedException{
+		 public  DetailsPage starttest(String TC) throws IOException, InterruptedException{
 			
 			
 			getstarted().click();
-			Screenshot.capturescreenshot(driver, "StartPage_1");//Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"StartPage_1");//Calling TakeScreenshot utility
 			
 			return PageFactory.initElements(driver,DetailsPage.class);
 			

@@ -35,11 +35,11 @@ public class FinalPage {
 	}
 		
 		
-		public void finalsubmit(){
+		public void finalsubmit(String TC){
 	    
-			Screenshot.capturescreenshot(driver, "FinalPage_1"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"FinalPage_1"); //Calling TakeScreenshot utility
 			contbut().click();
-			Screenshot.capturescreenshot(driver, "FinalPage_2");
+			Screenshot.capturescreenshot(driver, TC+"FinalPage_2");
 			
 		}
 		}

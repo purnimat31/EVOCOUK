@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="don_amt1" value="10.00"/>
-  <parameter name="don_amt" value="12.00"/>
+  <parameter name="firstname2" value="Nicole"/>
+  <parameter name="firstname1" value="Purnima"/>
+  <parameter name="lastname2" value="Kidman"/>
+  <parameter name="lastname1" value="Thiruvengadam"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="FrameWork_TestCase.Test_CRUKDonation_PageObject">
+      <class name="FrameWork_TestCase.Test_EVOCOUK_GOVUK_PageObject">
         <methods>
-          <include name="CRUK_PO_PF_Donation_ValidateTitle"/>
-          <include name="close"/>
           <include name="setup"/>
+          <include name="CRUK_PO_PF_Donation_Someoneelsemoney"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- FrameWork_TestCase.Test_CRUKDonation_PageObject -->
+      </class> <!-- FrameWork_TestCase.Test_EVOCOUK_GOVUK_PageObject -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

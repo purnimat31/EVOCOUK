@@ -36,11 +36,11 @@ public class DifficultyPage {
 			return contbut;
 	    }			
 				
-		public ConfirmationPage difficultyoption(){
+		public ConfirmationPage difficultyoption(String TC){
 	    			
             diff().click();
             contbut().click();
-            Screenshot.capturescreenshot(driver, "DifficultyPage_1"); //Calling TakeScreenshot utility
+            Screenshot.capturescreenshot(driver, TC+"DifficultyPage_1"); //Calling TakeScreenshot utility
 			return PageFactory.initElements(driver,ConfirmationPage.class);
             
             

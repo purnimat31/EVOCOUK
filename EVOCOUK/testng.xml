@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="TC001" value = "TC001"></parameter>
+<parameter name="TC002" value = "TC002"></parameter>
+<parameter name="TC003" value = "TC003"></parameter>
+<parameter name="firstname1" value = "Purnima"></parameter>
+<parameter name="lastname1" value = "Thiruvengadam"></parameter>
+<parameter name="firstname2" value = "Nicole"></parameter>
+<parameter name="lastname2" value = "Kidman"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="FrameWork_TestCase.Test_EVOCOUK_GOVUK_PageObject"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

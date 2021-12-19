@@ -36,16 +36,16 @@ public class ConfirmationPage {
 		}
 			
 			
-		public FinalPage checkyouranswers(){
+		public FinalPage checkyouranswers(String TC){
 	    
-			Screenshot.capturescreenshot(driver, "Checkyouranswers_1"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"Checkyouranswers_1"); //Calling TakeScreenshot utility
 			JavascriptExecutor js = (JavascriptExecutor) driver; //Javascript executor to invoke scroll down of page
             js.executeScript("window.scrollBy(0,250)", "");
-			Screenshot.capturescreenshot(driver, "Checkyouranswers_2"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"Checkyouranswers_2"); //Calling TakeScreenshot utility
             js.executeScript("window.scrollBy(0,250)", "");
-			Screenshot.capturescreenshot(driver, "Checkyouranswers_3"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"Checkyouranswers_3"); //Calling TakeScreenshot utility
 			js.executeScript("window.scrollBy(0,250)", "");
-			Screenshot.capturescreenshot(driver, "Checkyouranswers_4"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"Checkyouranswers_4"); //Calling TakeScreenshot utility
 			nextbut().click();
 			return PageFactory.initElements(driver,FinalPage.class);
 

@@ -65,17 +65,17 @@ public class ContactDetailsPage {
 			return contbut;
 	}
 		
-		public DifficultyPage contactdetails(){
+		public DifficultyPage contactdetails(String TC){
 	    
 			phonenbr().sendKeys("07411445127");
 			email().sendKeys("purnit31@gmail.com	");
-			Screenshot.capturescreenshot(driver, "ContactDetailsPage_1"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"ContactDetailsPage_1"); //Calling TakeScreenshot utility
 			//JavascriptExecutor js = (JavascriptExecutor) driver; //Javascript executor to invoke scroll down of page
 			address1().sendKeys("5 Albion Street");
-			Screenshot.capturescreenshot(driver, "ContactDetailsPage_2"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"ContactDetailsPage_2"); //Calling TakeScreenshot utility
 			address3().sendKeys("Swindon");
 			postcode().sendKeys("SN1 1EB");
-			Screenshot.capturescreenshot(driver, "ContactDetailsPage_3"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"ContactDetailsPage_3"); //Calling TakeScreenshot utility
 			contbut().click();
 			return PageFactory.initElements(driver,DifficultyPage.class);
 

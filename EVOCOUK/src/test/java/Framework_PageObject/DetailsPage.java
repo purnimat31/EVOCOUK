@@ -91,18 +91,18 @@ public class DetailsPage {
 			
 		}		
 							
-		public  OptionsPage enterpersonaldetails(){
+		public  OptionsPage enterpersonaldetails(String TC, String firstname, String lastname){
 
 			title().sendKeys("Miss");
-			firstname().sendKeys("Tester");	
+			firstname().sendKeys(firstname);	
 			middlename().sendKeys("middlename");
-			lastname().sendKeys("O'Doh-erty");			
-			Screenshot.capturescreenshot(driver, "PersonalDetailsPage_1"); //Calling TakeScreenshot utility
+			lastname().sendKeys(lastname);			
+			Screenshot.capturescreenshot(driver, TC+"PersonalDetailsPage_1"); //Calling TakeScreenshot utility
 			dobdate().sendKeys("12");
 			dobmonth().sendKeys("12");
 			dobyear().sendKeys("1980");
 			ni().sendKeys("SB456789B");			
-			Screenshot.capturescreenshot(driver, "PersonalDetailsPage_2"); //Calling TakeScreenshot utility
+			Screenshot.capturescreenshot(driver, TC+"PersonalDetailsPage_2"); //Calling TakeScreenshot utility
 			contbut().click();
 			return PageFactory.initElements(driver,OptionsPage.class);
 			
